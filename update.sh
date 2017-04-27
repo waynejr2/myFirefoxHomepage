@@ -6,10 +6,12 @@ myHomepage.HTML
 README.md
 update.sh
 update2.sh
+css\main.css
 info\wjr.txt
 "
 
 dirs="
+css
 info
 "
 

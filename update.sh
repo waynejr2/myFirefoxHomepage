@@ -1,9 +1,55 @@
 #!/bin/sh
 
+
+files="
+myHomepage.HTML
+README.md
+update.sh
+update2.sh
+info\wjr.txt
+"
+
+dirs="
+info
+"
+
+filerm() {
+	for file in $files
+	do
+		file="$DOWHOME\\$file"
+		#echo $file
+		if [ -f $file ]
+		then
+			echo "file found at $file"
+			rm $file
+		fi
+	done
+}
+
+dirrm() {
+for dir in $dirs
+do
+	dir="$DOWHOME\\$dir"
+	#echo $dir
+	if [ -d $dir ]
+	then
+		echo "dir found at $dir"
+		rmdir $dir
+	fi	
+done
+}
+
+updateproject() {
+	tar cvf - * | (cd $DOWHOME ; tar xf - )
+	files=`(cd $DOWHOME ; find * -type f -print)`
+}
+
+
 DOWHOME=C:\\Users\\wayne\\Downloads\\myFirefoxHomepage-master-test
 if [ -d $DOWHOME ]
 then
-	echo $DOWHOME
-	tar cvf - * | (cd $DOWHOME ; tar xf - )
+	filerm
+	dirrm
+	updateproject
 fi
 

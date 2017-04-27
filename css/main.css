@@ -1,0 +1,37 @@
+body {
+	background: #CCCCFF;
+}
+div {
+	background: #CCCCFF;
+}
+a {
+	background: #CCCCFF;
+	border: 1px solid #FFFFCC;
+	display: inline-block;
+	width: 400px;
+}
+.ent {
+	background:  #CCFFCC;
+}
+.code {
+	background:  #FFCCCC;
+}
+.gamedev {
+	background: #FFCCFF;
+}
+.hidden {
+	visibility:hidden;
+}
+.validation {
+	border: 1px solid #FF0000;
+	width: 1620px;
+	//background: #ee0000;
+	background: #00ff00;
+}
+.validation > a {
+	width: 390px;
+	margin: 5px;
+	background: #ffff00;
+	//color: #00ff00;
+	color: #ee0000;
+}

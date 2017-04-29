@@ -52,5 +52,5 @@ if [ -d $DOWHOME ]
 then
 	filerm
 	dirrm
-	#updateproject
+	updateproject
 fi

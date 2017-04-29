@@ -5,7 +5,7 @@ files="
 myHomepage.HTML
 README.md
 update.sh
-update2.sh
+updateproduction.sh
 css\main.css
 info\wjr.txt
 "
@@ -42,7 +42,7 @@ done
 }
 
 updateproject() {
-	tar cvf - * | (cd $DOWHOME ; tar xf - )
+	tar cvf - --exclude "updateproduction.sh" * | (cd $DOWHOME ; tar xf - )
 	files=`(cd $DOWHOME ; find * -type f -print)`
 }
 

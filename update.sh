@@ -42,7 +42,7 @@ done
 }
 
 updateproject() {
-	tar cvf - * | (cd $DOWHOME ; tar xf - )
+	tar cvf - --exclude "update.sh" * | (cd $DOWHOME ; tar xf - )
 	files=`(cd $DOWHOME ; find * -type f -print)`
 }
 

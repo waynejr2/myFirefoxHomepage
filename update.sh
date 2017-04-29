@@ -5,7 +5,7 @@ files="
 myHomepage.HTML
 README.md
 update.sh
-update2.sh
+updateproduction.sh
 css\main.css
 info\wjr.txt
 "
@@ -52,6 +52,5 @@ if [ -d $DOWHOME ]
 then
 	filerm
 	dirrm
-	updateproject
+	#updateproject
 fi
-

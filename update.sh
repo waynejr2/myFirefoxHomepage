@@ -4,6 +4,7 @@
 files="
 myHomepage.HTML
 game_social_forum.html
+game_dev.html
 README.md
 update.sh
 updateproduction.sh

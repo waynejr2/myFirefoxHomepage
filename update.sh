@@ -5,6 +5,7 @@ files="
 myHomepage.HTML
 game_social_forum.html
 game_dev.html
+JavaScript.html
 news_entertainment.html
 Source_Repositories.html
 Validators_Checklists_Tools.html

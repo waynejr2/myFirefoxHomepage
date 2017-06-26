@@ -6,6 +6,7 @@ myHomepage.HTML
 game_social_forum.html
 game_dev.html
 news_entertainment.html
+Source_Repositories.html
 Validators_Checklists_Tools.html
 README.md
 update.sh

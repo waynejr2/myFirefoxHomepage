@@ -22,6 +22,15 @@ a {
 .hidden {
 	visibility:hidden;
 }
+.tools {
+	background: #FFCCFF;
+}
+.tools div {
+	background: #FFCCFF;
+}
+.tools a {
+	background: #FFCCFF;
+}
 .validation {
 	border: 1px solid #FF0000;
 	width: 1620px;
